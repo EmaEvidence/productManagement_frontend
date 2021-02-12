@@ -13,7 +13,7 @@ import SignIn from './components/Signin';
 import SignUp from './components/Signup';
 import Product from './components/Product';
 
-const baseUrl = 'http://localhost:3001';
+const baseUrl = process.env.REACT_APP_BASE_URL;
 
 function App() {
   const [user, setUser] = useState(null);
